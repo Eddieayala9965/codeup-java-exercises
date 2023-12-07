@@ -73,43 +73,64 @@ public class Practice {
 //      scanner.close();
 //
 
-        char continueChoice;
+//        char continueChoice;
+//
+//        do {
+//            // Prompt user for numerical grade
+//            System.out.print("Enter your numerical grade (0-100): ");
+//            int numericalGrade = scanner.nextInt();
+//
+//            // Convert numerical grade to letter grade
+//            char letterGrade = convertToLetterGrade(numericalGrade);
+//
+//            // Display the corresponding letter grade
+//            System.out.println("Your letter grade is: " + letterGrade);
+//
+//            // Prompt user to continue
+//            System.out.print("Do you want to continue? (y/n): ");
+//            continueChoice = scanner.next().charAt(0);
+//
+//        } while (Character.toLowerCase(continueChoice) == 'y');
+//
+//        // Close the scanner
+//        scanner.close();
+//    }
+//
+//    // Function to convert numerical grade to letter grade
+//    private static char convertToLetterGrade(int numericalGrade) {
+//        if (numericalGrade >= 88 && numericalGrade <= 100) {
+//            return 'A';
+//        } else if (numericalGrade >= 80 && numericalGrade <= 87) {
+//            return 'B';
+//        } else if (numericalGrade >= 67 && numericalGrade <= 79) {
+//            return 'C';
+//        } else if (numericalGrade >= 60 && numericalGrade <= 66) {
+//            return 'D';
+//        } else {
+//            return 'F';
+//        }
+//    }
 
-        do {
-            // Prompt user for numerical grade
-            System.out.print("Enter your numerical grade (0-100): ");
-            int numericalGrade = scanner.nextInt();
 
-            // Convert numerical grade to letter grade
-            char letterGrade = convertToLetterGrade(numericalGrade);
+//    do {
+//        System.out.print("Select your number");
+//        int userInput = scanner.nextiny);
+//
+//
+//        System.out.print("Numbers\tSquare\tCube");
+//        for (int i = 1;i <= userInput ;i++);
+//        System.out.println(i + "\t" + i * i );
+//
+//
 
-            // Display the corresponding letter grade
-            System.out.println("Your letter grade is: " + letterGrade);
+        System.out.println("  EE EE EE EE          AA");
+        System.out.println("  EE                 AA   AA");
+        System.out.println("  EE               AA       AA");
+        System.out.println("  EE EE EE        AA AA AA AA AA");
+        System.out.println("  EE              AA          AA");
+        System.out.println("  EE              AA          AA");
+        System.out.println("  EE EE EE EE     AA          AA");
 
-            // Prompt user to continue
-            System.out.print("Do you want to continue? (y/n): ");
-            continueChoice = scanner.next().charAt(0);
 
-        } while (Character.toLowerCase(continueChoice) == 'y');
-
-        // Close the scanner
-        scanner.close();
     }
-
-    // Function to convert numerical grade to letter grade
-    private static char convertToLetterGrade(int numericalGrade) {
-        if (numericalGrade >= 88 && numericalGrade <= 100) {
-            return 'A';
-        } else if (numericalGrade >= 80 && numericalGrade <= 87) {
-            return 'B';
-        } else if (numericalGrade >= 67 && numericalGrade <= 79) {
-            return 'C';
-        } else if (numericalGrade >= 60 && numericalGrade <= 66) {
-            return 'D';
-        } else {
-            return 'F';
-        }
-    }
-
-
 }

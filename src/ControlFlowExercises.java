@@ -17,12 +17,12 @@ public class ControlFlowExercises {
 //        } while (i >= -10);
 
 //
-// int number = 2;
+//            long number = 2;
 //                do {
 //                    System.out.println(number * number);
-//                    number++;
+//                    number = number * number;
 //                } while (number < 1000000);
-//        System.out.println(number + 2);
+
 
 //        for (int i = 2; i <= 100; i+=2) {
 //    System.out.println(i);
@@ -35,14 +35,16 @@ public class ControlFlowExercises {
 //            System.out.println(i);
 //        }
 //        for (int i = 1; i <= 100; i++) {
-//            if (i % 3 == 0) {
-//                System.out.println("Fizz");
-//            }
-//            if (i % 5 == 0) {
-//                System.out.println("Buzz");
-//            }
 //            if (i % 3 == 0 && i % 5 == 0) {
-//                System.out.println("Fizz Buzz");
+//                System.out.println("Fizz Buzz" + i);
+//            }
+//            else if (i % 3 == 0) {
+//                System.out.println("Fizz" + i);
+//            }
+//             else if (i % 5 == 0) {
+//                System.out.println("Buzz" + i);
+//            } else {
+//                 System.out.println(i);
 //            }
 
 //        String continueResponse;
@@ -68,44 +70,44 @@ public class ControlFlowExercises {
 //        System.out.println("Program terminated.");
 //        scanner.close();
 
-        char continueChoice;
+//            char continueChoice;
+//
+//            do {
+//                // Prompt user for numerical grade
+//                System.out.print("Enter your numerical grade (0-100): ");
+//                int numericalGrade = scanner.nextInt();
+//
+//                // Convert numerical grade to letter grade
+//                char letterGrade = convertToLetterGrade(numericalGrade);
+//
+//                // Display the corresponding letter grade
+//                System.out.println("Your letter grade is: " + letterGrade);
+//
+//                // Prompt user to continue
+//                System.out.print("Do you want to continue? (y/n): ");
+//                continueChoice = scanner.next().charAt(0);
+//
+//            } while (Character.toLowerCase(continueChoice) == 'y');
+//
+//            // Close the scanner
+//            scanner.close();
+//        }
 
-        do {
-            // Prompt user for numerical grade
-            System.out.print("Enter your numerical grade (0-100): ");
-            int numericalGrade = scanner.nextInt();
+            // Function to convert numerical grade to letter grade
+//        private static char convertToLetterGrade ( int numericalGrade){
+//            if (numericalGrade >= 88 && numericalGrade <= 100) {
+//                return 'A';
+//            } else if (numericalGrade >= 80 && numericalGrade <= 87) {
+//                return 'B';
+//            } else if (numericalGrade >= 67 && numericalGrade <= 79) {
+//                return 'C';
+//            } else if (numericalGrade >= 60 && numericalGrade <= 66) {
+//                return 'D';
+//            } else {
+//                return 'F';
+//            }
+//        }
 
-            // Convert numerical grade to letter grade
-            char letterGrade = convertToLetterGrade(numericalGrade);
 
-            // Display the corresponding letter grade
-            System.out.println("Your letter grade is: " + letterGrade);
-
-            // Prompt user to continue
-            System.out.print("Do you want to continue? (y/n): ");
-            continueChoice = scanner.next().charAt(0);
-
-        } while (Character.toLowerCase(continueChoice) == 'y');
-
-        // Close the scanner
-        scanner.close();
-    }
-
-    // Function to convert numerical grade to letter grade
-    private static char convertToLetterGrade(int numericalGrade) {
-        if (numericalGrade >= 88 && numericalGrade <= 100) {
-            return 'A';
-        } else if (numericalGrade >= 80 && numericalGrade <= 87) {
-            return 'B';
-        } else if (numericalGrade >= 67 && numericalGrade <= 79) {
-            return 'C';
-        } else if (numericalGrade >= 60 && numericalGrade <= 66) {
-            return 'D';
-        } else {
-            return 'F';
         }
-    }
-
-
-
 }
