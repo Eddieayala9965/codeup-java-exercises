@@ -1,16 +1,22 @@
 class Person {
-    public String firstName;
-    public String lastName;
 
-    public String getName() {
-        return String.format("Hello ", firstName, lastName);
+    private String name;
+    public String getName(){
+        return name;
     }
-
-    public static void main(String[] args) {
-        Person eddie = new Person();
-        eddie.firstName = "Eddie";
-        eddie.lastName = "Ayala";
-        System.out.println(eddie.getName());
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void sayHello() {
+        System.out.println("Hello my name is " + name + "!");
+    }
+    public static void main(String[] args){
+        Person person1 = new Person();
+        person1.setName("Eddie");
+        System.out.println("persons name " + person1.getName());
+        person1.sayHello();
 
     }
 }
+
+
