@@ -26,10 +26,10 @@ public class Input {
             System.out.printf("Enter an integer between %d and %d: ", min, max);
             while (!scanner.hasNextInt()) {
                 System.out.println("That's not an integer!");
-                scanner.next(); // clear the invalid input
+                scanner.next();
             }
             number = scanner.nextInt();
-            scanner.nextLine(); // clear the buffer
+            scanner.nextLine();
         } while (number < min || number > max);
 
         return number;
@@ -39,10 +39,10 @@ public class Input {
         System.out.print("Enter an integer: ");
         while (!scanner.hasNextInt()) {
             System.out.println("That's not an integer!");
-            scanner.next(); // clear the invalid input
+            scanner.next();
         }
         int number = scanner.nextInt();
-        scanner.nextLine(); // clear the buffer
+        scanner.nextLine();
         return number;
     }
 
@@ -52,10 +52,10 @@ public class Input {
             System.out.printf("Enter a decimal number between %.2f and %.2f: ", min, max);
             while (!scanner.hasNextDouble()) {
                 System.out.println("That's not a decimal number!");
-                scanner.next(); // clear the invalid input
+                scanner.next();
             }
             number = scanner.nextDouble();
-            scanner.nextLine(); // clear the buffer
+            scanner.nextLine();
         } while (number < min || number > max);
 
         return number;
@@ -65,14 +65,14 @@ public class Input {
         System.out.print("Enter a decimal number: ");
         while (!scanner.hasNextDouble()) {
             System.out.println("That's not a decimal number!");
-            scanner.next(); // clear the invalid input
+            scanner.next();
         }
         double number = scanner.nextDouble();
-        scanner.nextLine(); // clear the buffer
+        scanner.nextLine();
         return number;
     }
 
-    // Close the scanner when it's no longer needed
+
     public void close() {
         scanner.close();
     }

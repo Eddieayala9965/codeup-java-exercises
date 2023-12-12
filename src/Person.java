@@ -1,22 +1,32 @@
-class Person {
+// Person.java
 
+public class Person {
     private String name;
-    public String getName(){
-        return name;
+
+    public Person(String name) {
+        this.name = name;
     }
+
+    public String getName() {
+        return this.name;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
-    public void sayHello() {
-        System.out.println("Hello my name is " + name + "!");
-    }
-    public static void main(String[] args){
-        Person person1 = new Person();
-        person1.setName("Eddie");
-        System.out.println("persons name " + person1.getName());
-        person1.sayHello();
 
+    public void sayHello() {
+        System.out.println("Hello, my name is " + this.name);
+    }
+
+    public static void main(String[] args) {
+        // Testing the Person class
+        Person person = new Person("John");
+        person.sayHello();
+        System.out.println("Initial Name: " + person.getName());
+
+        // Testing setName method
+        person.setName("Jane");
+        System.out.println("Updated Name: " + person.getName());
     }
 }
-
-
