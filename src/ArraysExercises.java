@@ -1,6 +1,6 @@
 public class ArraysExercises {
 
-    public class PersonUtils {
+    public static class PersonUtils {
         public static Person[] addPerson(Person[] existingArray, Person personToAdd) {
             // create array
             Person[] newArray = new Person[existingArray.length + 1];
@@ -24,6 +24,7 @@ public class ArraysExercises {
         for (int i = 0; i < people.length; i += 1) {
             System.out.println(people[i]);
         }
+
 
 
 //        int[] numbers = {1, 2, 3, 4, 5};
